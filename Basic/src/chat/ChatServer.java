@@ -7,7 +7,7 @@ import java.util.*;
 public class ChatServer {
     private static final int PORT = 12345;
     private static Set<PrintWriter> clientWriters = new HashSet<>();
-
+    int string;
     public static void main(String[] args) {
         System.out.println("Chat server đang chạy...");
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
